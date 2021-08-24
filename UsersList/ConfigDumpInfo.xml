@@ -34,10 +34,10 @@
 		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="51a8d98d-4d64-4c53-964f-fec44560b917.0" configVersion="9290ec9c04137a479bee27d9c614251700000000"/>
 		<Metadata name="Configuration.Конфигурация" id="9e90c7c3-39d5-42a5-a48d-675fa2b8b1c4" configVersion="ae2d2119a62bb2478dab57b42dbc63d900000000"/>
 		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="4f74e98d-1f94-4aeb-bd61-b58e24feba69.8" configVersion="97eee80240ecd243a186877068e57e0100000000"/>
-		<Metadata name="DataProcessor.РаботаСоСпискомПользователей" id="cd05ad88-ac44-438a-b1af-5cd0a3a776f5" configVersion="93da2166a33351458e056836154aeb3b00000000"/>
+		<Metadata name="DataProcessor.РаботаСоСпискомПользователей" id="cd05ad88-ac44-438a-b1af-5cd0a3a776f5" configVersion="846411f7d455194da70c19de67ba80f100000000"/>
 		<Metadata name="DataProcessor.РаботаСоСпискомПользователей.Form.Форма" id="c8afcc33-a9ad-4b4d-b1f0-1872a7ed674e" configVersion="89aaacc8884f204a8afaacbc745a8a9800000000"/>
 		<Metadata name="DataProcessor.РаботаСоСпискомПользователей.Form.Форма.Form" id="c8afcc33-a9ad-4b4d-b1f0-1872a7ed674e.0" configVersion="38be497d3c0dde40a0a7b666dd40069300000000"/>
-		<Metadata name="DataProcessor.РаботаСоСпискомПользователей.ManagerModule" id="cd05ad88-ac44-438a-b1af-5cd0a3a776f5.2" configVersion="24989261f3733b40b72b28b9052527a200000000"/>
+		<Metadata name="DataProcessor.РаботаСоСпискомПользователей.ManagerModule" id="cd05ad88-ac44-438a-b1af-5cd0a3a776f5.2" configVersion="0fa5766fd99d5148be1abbfc378da0a000000000"/>
 		<Metadata name="DataProcessor.УстановкаИсключаемыхПользователей" id="76e0b645-e69c-467c-8627-36cc7e49d96a" configVersion="0b3bcc5b8ecbb345bf40eb35cf44574000000000">
 			<Metadata name="DataProcessor.УстановкаИсключаемыхПользователей.TabularSection.ИсключаемыеПользователи" id="3cc14cd8-8782-43b9-9c1e-3e9e1f5be384"/>
 			<Metadata name="DataProcessor.УстановкаИсключаемыхПользователей.Attribute.ИнформационнаяБаза" id="529c7973-e100-4978-b663-bfeee01c6cb0"/>
