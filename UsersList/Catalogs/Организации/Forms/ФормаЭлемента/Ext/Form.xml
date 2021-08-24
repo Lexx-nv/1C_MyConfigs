@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИНН" id="78">
+			<DataPath>Объект.ИНН</DataPath>
+			<ContextMenu name="ИННКонтекстноеМеню" id="79"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="80"/>
+		</InputField>
+		<UsualGroup name="ГруппаЗУП" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для подключения к ЗУП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ЗУП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<BackColor>#FFFF99</BackColor>
+			<ExtendedTooltip name="ГруппаЗУПРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Button name="КнопкаПолучитьРаботающих" id="76">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.КомандаПолучитьРаботающих</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить работающих сотрудников</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаПолучитьРаботающихРасширеннаяПодсказка" id="77"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ЗУП" id="81">
+			<DataPath>Объект.ЗУП</DataPath>
+			<ContextMenu name="ЗУПКонтекстноеМеню" id="82"/>
+			<ExtendedTooltip name="ЗУПРасширеннаяПодсказка" id="83"/>
+		</InputField>
+		<InputField name="Бухгалтерия" id="84">
+			<DataPath>Объект.Бухгалтерия</DataPath>
+			<ContextMenu name="БухгалтерияКонтекстноеМеню" id="85"/>
+			<ExtendedTooltip name="БухгалтерияРасширеннаяПодсказка" id="86"/>
+		</InputField>
+		<InputField name="УАТ" id="87">
+			<DataPath>Объект.УАТ</DataPath>
+			<ContextMenu name="УАТКонтекстноеМеню" id="88"/>
+			<ExtendedTooltip name="УАТРасширеннаяПодсказка" id="89"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Организации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПроверитьПодключениеУАТ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверить подключение УАТ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к "Путевым листам"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроверитьПодключениеУАТ</Action>
+		</Command>
+		<Command name="КомандаПроверитьПодключениеБух" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверить подключение Бух</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к "Путевым листам"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроверитьПодключениеБух</Action>
+		</Command>
+		<Command name="КомандаПроверитьПодключениеЗУП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверить подключение Бух</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к "Путевым листам"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроверитьПодключениеЗУП</Action>
+		</Command>
+		<Command name="КомандаПолучитьРаботающих" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда получить работающих</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда получить работающих</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПолучитьРаботающих</Action>
+		</Command>
+	</Commands>
+</Form>
