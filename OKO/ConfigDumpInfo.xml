@@ -14,8 +14,8 @@
 		<Metadata name="Constant.окоЗначениеДляФормыЭкрана" id="9e5aa59e-2e2c-464d-8454-4551c8c4d0fa" configVersion="d12971986dbccb498030e910f173c52800000000"/>
 		<Metadata name="Constant.окоПутьДоФайлаДанных" id="745f6e89-4cc0-4731-8fff-15c76b420e6a" configVersion="ebfee4a0b628124b9a1b545fe450acf000000000"/>
 		<Metadata name="DataProcessor.РабочийСтолПроектОКО" id="e46fc56b-256d-4d45-b671-b612e5180749" configVersion="db51f53d714e2a42888eec40ac7b915700000000"/>
-		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6" configVersion="36c6517914438e4d9b903decb96b92fa00000000"/>
-		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера.Form" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6.0" configVersion="bbd2bbb72e20344f9c3baaf1effa28b700000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6" configVersion="8efa050310ef1649985f526c025838d300000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера.Form" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6.0" configVersion="002f6173fe12eb41822209c6f6489d0500000000"/>
 		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.ФормаАдминистрирования" id="cc29a9c8-25b1-492f-9a25-bdf5d720aa23" configVersion="69fa3fddac357440bee8544b60c7124d00000000"/>
 		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.ФормаАдминистрирования.Form" id="cc29a9c8-25b1-492f-9a25-bdf5d720aa23.0" configVersion="38b666c6d62f7243acb707bdee775b4100000000"/>
 		<Metadata name="DataProcessor.РабочийСтолПроектОКО.ManagerModule" id="e46fc56b-256d-4d45-b671-b612e5180749.2" configVersion="acb7604c9d38644181287a756933852900000000"/>
