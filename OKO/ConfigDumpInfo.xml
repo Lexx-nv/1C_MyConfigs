@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<ConfigVersions>
+		<Metadata name="CommonForm.ФормаКонстант" id="6e538342-d64f-4c9f-9f58-e1c65b3d2eac" configVersion="17e67a2549ced54ca4969fc26a0fa51300000000"/>
+		<Metadata name="CommonForm.ФормаКонстант.Form" id="6e538342-d64f-4c9f-9f58-e1c65b3d2eac.0" configVersion="ec4de4b2c4339849ab9c1d85740d48cf00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="9ef35f02-43ff-4f03-accd-315552ed05e3" configVersion="1b010009ffb0b94c82f0e1316b9a4d3300000000"/>
+		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="bfb09bd3-5756-4635-9535-c86040646f75.b" configVersion="4abd8b21d4545141983db9f8027422f600000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="bfb09bd3-5756-4635-9535-c86040646f75.8" configVersion="897cf8a3a6b7a74b9156ff31ae621c6300000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="bfb09bd3-5756-4635-9535-c86040646f75.6" configVersion="f526dd3a9789064aa861f37f14f0de5000000000"/>
+		<Metadata name="Configuration.Конфигурация.SessionModule" id="bfb09bd3-5756-4635-9535-c86040646f75.7" configVersion="3336fbc60a16c84690a9926cbe5b3bc800000000"/>
+		<Metadata name="Constant.АдресСервераПЛ" id="d11eb9c8-d1ec-4e0b-b52b-a617aaef5084" configVersion="4be06b540266b64d9ba01d734ee5a1f900000000"/>
+		<Metadata name="Constant.НаименованиеБазыПЛ" id="c3d743fa-6b88-4446-bc3b-a86716a55911" configVersion="185fc87ef652204e98fc52ee2d1151b200000000"/>
+		<Metadata name="Constant.НаименованиеОрганизации" id="82293ee3-5294-42ef-9e40-78df9d6b1e55" configVersion="7133ce4ef14c5d488010879ec7754a3200000000"/>
+		<Metadata name="Constant.окоЗначениеДляФормыЭкрана" id="9e5aa59e-2e2c-464d-8454-4551c8c4d0fa" configVersion="d12971986dbccb498030e910f173c52800000000"/>
+		<Metadata name="Constant.окоПутьДоФайлаДанных" id="745f6e89-4cc0-4731-8fff-15c76b420e6a" configVersion="ebfee4a0b628124b9a1b545fe450acf000000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО" id="e46fc56b-256d-4d45-b671-b612e5180749" configVersion="012ffb81bb0d564e9ee5442fdb97355f00000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6" configVersion="36c6517914438e4d9b903decb96b92fa00000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.РабочийСтолДиспетчера.Form" id="ee7940a5-65cc-49f6-bf66-4a3b06dc83c6.0" configVersion="bbd2bbb72e20344f9c3baaf1effa28b700000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.ФормаАдминистрирования" id="cc29a9c8-25b1-492f-9a25-bdf5d720aa23" configVersion="69fa3fddac357440bee8544b60c7124d00000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.Form.ФормаАдминистрирования.Form" id="cc29a9c8-25b1-492f-9a25-bdf5d720aa23.0" configVersion="38b666c6d62f7243acb707bdee775b4100000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.ManagerModule" id="e46fc56b-256d-4d45-b671-b612e5180749.2" configVersion="4ee382dcc4dbc743ac4cf8d64f93df5b00000000"/>
+		<Metadata name="DataProcessor.РабочийСтолПроектОКО.ObjectModule" id="e46fc56b-256d-4d45-b671-b612e5180749.0" configVersion="b36f5be79a2ff74cabd7b3c36f74efb700000000"/>
+		<Metadata name="HTTPService.entAPI" id="0ca8d4fa-6afb-41f2-b05f-ee6a92e6efed" configVersion="ebee054691bde94d948a2576ecf671b100000000">
+			<Metadata name="HTTPService.entAPI.URLTemplate.GET" id="1ffd00ee-c47c-446b-bc94-fa22c3986ff7"/>
+			<Metadata name="HTTPService.entAPI.URLTemplate.GET.Method.POST" id="43dca39e-e650-4be6-9908-47917f8a556a"/>
+			<Metadata name="HTTPService.entAPI.URLTemplate.GET.Method.PUT" id="556061ac-db4e-4017-96bb-9fcd3baa22de"/>
+			<Metadata name="HTTPService.entAPI.URLTemplate.GET.Method.GET" id="f3aced32-3ec8-425d-bcdd-681a133cce7c"/>
+		</Metadata>
+		<Metadata name="HTTPService.entAPI.Module" id="0ca8d4fa-6afb-41f2-b05f-ee6a92e6efed.0" configVersion="8f4ad7a1d1054e4cbbce95918eb28d9900000000"/>
+		<Metadata name="Language.Русский" id="f6288d80-f71e-4868-85a0-3df8de44e8cb" configVersion="5b3876161c0594429f7400aee7b13ec300000000"/>
+		<Metadata name="Role.Администратор" id="7f5bf4cf-8868-4ffd-9f70-04705b01f23e" configVersion="22893dd8d06e8440bbbca721fd41509000000000"/>
+		<Metadata name="Role.Администратор.Rights" id="7f5bf4cf-8868-4ffd-9f70-04705b01f23e.0" configVersion="3498e70bdffaba4085f01ce1028a762700000000"/>
+		<Metadata name="Role.ПроектОКО" id="58a0dfa1-9af8-4769-893c-f4aecd874bdc" configVersion="5df778614091c0458b583f5d75e4b7ef00000000"/>
+		<Metadata name="Role.ПроектОКО.Rights" id="58a0dfa1-9af8-4769-893c-f4aecd874bdc.0" configVersion="bd89524c433fcc429f0124d6cb1e257700000000"/>
+		<Metadata name="Subsystem.ОбщиеДанные" id="5f704f73-484a-4a1a-93f7-af9b4d049472" configVersion="e3b8bac50c2da84c954d28c10a9d4d4c00000000"/>
+		<Metadata name="Subsystem.ПроектОКО" id="02ce911d-c57f-422b-979c-cd614b121cc4" configVersion="0ddc9eaa0a08aa49bde537beeb384d5b00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

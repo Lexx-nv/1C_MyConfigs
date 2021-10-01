@@ -1,0 +1,3517 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛевая" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка левая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка левая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛеваяРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<InputField name="Подразделение" id="1">
+							<DataPath>Подразделение</DataPath>
+							<TitleTextColor>#339966</TitleTextColor>
+							<TitleFont ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleLocation>None</TitleLocation>
+							<DropListButton>true</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<OpenButton>false</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextColor>#FF00FF</TextColor>
+							<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ПодразделениеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">ПодразделениеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ДатаВремяБСМТС" id="110">
+							<DataPath>ДатаВремяБСМТС</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные БСМТС на</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>#0000FF</TitleTextColor>
+							<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<HorizontalStretch>false</HorizontalStretch>
+							<TextColor>#0000FF</TextColor>
+							<Font ref="style:TextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ДатаВремяБСМТСКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ДатаВремяБСМТСРасширеннаяПодсказка" id="112"/>
+						</LabelField>
+						<UsualGroup name="ГруппаАдминистрирование" id="378">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа администрирование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа администрирование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдминистрированиеРасширеннаяПодсказка" id="379"/>
+							<ChildItems>
+								<RadioButtonField name="ПереключательРазделы" id="232">
+									<DataPath>ПереключательРазделы</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<EqualColumnsWidth>true</EqualColumnsWidth>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Линия и гараж</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Без БСМТС и БДД</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ремонт полный</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ремонт по подразделению</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">3</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Итоги по колонне</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">4</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПереключательРазделыКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="ПереключательРазделыРасширеннаяПодсказка" id="234"/>
+									<Events>
+										<Event name="OnChange">ПереключательРазделыПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<Button name="КомандаОткрытьФормуАдминистратора" id="374">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.КомандаОткрытьФормуАдминистратора</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Администрирование системы "Проект ОКО"</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаОткрытьФормуАдминистратораРасширеннаяПодсказка" id="375"/>
+								</Button>
+								<Button name="ОбщаяФормаФормаКонстантОткрыть" id="472">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>CommonForm.ФормаКонстант.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Constant</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОбщаяФормаФормаКонстантОткрытьРасширеннаяПодсказка" id="473"/>
+								</Button>
+								<Button name="КомандаОбновитьДанныеОсновныхТаблиц" id="376">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.КомандаОбновитьДанныеОсновныхТаблиц</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Reread</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить данные системы</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаОбновитьДанныеОсновныхТаблицРасширеннаяПодсказка" id="377"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПравая" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка правая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка правая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Horizontal</Group>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПраваяРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНадпись1" id="64">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>65</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#C0C0C0</BackColor>
+							<ExtendedTooltip name="ГруппаНадпись1РасширеннаяПодсказка" id="65"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаНаВыезде" id="82">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа на выезде</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа на выезде</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНаВыездеРасширеннаяПодсказка" id="83"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьНаВыезде" id="77">
+											<Width>60</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Транспортное средство находится на выезде</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FFFFFF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНаВыездеКонтекстноеМеню" id="78"/>
+											<ExtendedTooltip name="НадписьНаВыездеРасширеннаяПодсказка" id="79"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьНаВыездеКол" id="84">
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>0 ед.</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FFFFFF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНаВыездеКолКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="НадписьНаВыездеКолРасширеннаяПодсказка" id="86"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаНаБазе" id="87">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа на базе</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа на базе</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНаБазеРасширеннаяПодсказка" id="88"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьНаБазе" id="68">
+											<Width>60</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Транспортное средство находится на территории базы</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#CCFFCC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНаБазеКонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="НадписьНаБазеРасширеннаяПодсказка" id="70"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьНаБазеКол" id="89">
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>0 ед.</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#CCFFCC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНаБазеКолКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="НадписьНаБазеКолРасширеннаяПодсказка" id="91"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКосякСДатой" id="92">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа косяк с датой</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа косяк с датой</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКосякСДатойРасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьКосякСДатой" id="71">
+											<Width>60</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дате последних показаний более 3 суток</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FFFF99</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьКосякСДатойКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="НадписьКосякСДатойРасширеннаяПодсказка" id="73"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьКосякСДатойКол" id="94">
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>0 ед.</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FFFF99</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьКосякСДатойКолКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="НадписьКосякСДатойКолРасширеннаяПодсказка" id="96"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаНетДанных" id="97">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа нет данных</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа нет данных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНетДанныхРасширеннаяПодсказка" id="98"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьНетДанных" id="74">
+											<Width>60</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По транспортному средству нет данных БСМТС</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FF9696</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНетДанныхКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="НадписьНетДанныхРасширеннаяПодсказка" id="76"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьНетДанныхКол" id="99">
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>0 ед.</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<BackColor>#FF9696</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Embossed</v8ui:style>
+											</Border>
+											<ContextMenu name="НадписьНетДанныхКолКонтекстноеМеню" id="100"/>
+											<ExtendedTooltip name="НадписьНетДанныхКолРасширеннаяПодсказка" id="101"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа0" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа0</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа0</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#FFFF99</BackColor>
+			<ExtendedTooltip name="Группа0РасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНаЛинии" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа на линии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа на линии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FFFFFF</BackColor>
+					<ExtendedTooltip name="ГруппаНаЛинииРасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНадписьТСНаЛинии" id="255">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСНа линии</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСНа линии</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#CCFFFF</BackColor>
+							<ExtendedTooltip name="ГруппаНадписьТСНаЛинииРасширеннаяПодсказка" id="256"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьТСНаЛинииСтр" id="207">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#333399</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортные средства на линии</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСНаЛинииСтрКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="НадписьТСНаЛинииСтрРасширеннаяПодсказка" id="209"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСНаЛинииКол" id="257">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьТСНаЛинииКолКонтекстноеМеню" id="258"/>
+									<ExtendedTooltip name="НадписьТСНаЛинииКолРасширеннаяПодсказка" id="259"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСНаЛинииКолСНарушениями" id="461">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>КолНар</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьТСНаЛинииКолСНарушениямиКонтекстноеМеню" id="462"/>
+									<ExtendedTooltip name="НадписьТСНаЛинииКолСНарушениямиРасширеннаяПодсказка" id="463"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПереченьТСНаЛинии" id="4">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<DefaultItem>true</DefaultItem>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПереченьТСНаЛинии</DataPath>
+							<BackColor>#CCFFFF</BackColor>
+							<Font ref="style:TextFont" height="48" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереченьТСНаЛинииКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="ПереченьТСНаЛинииКоманднаяПанель" id="6">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереченьТСНаЛинииРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="ПереченьТСНаЛинииСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>ПереченьТСНаЛинии</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНаЛинииСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ПереченьТСНаЛинииСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереченьТСНаЛинииСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>ПереченьТСНаЛинии</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНаЛинииСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ПереченьТСНаЛинииСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереченьТСНаЛинииУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>ПереченьТСНаЛинии</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНаЛинииУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ПереченьТСНаЛинииУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПереченьТСНаЛинииГаражныйНомер" id="20">
+									<DataPath>ПереченьТСНаЛинии.ГаражныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гар. номер</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСНаЛинииГаражныйНомерКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ПереченьТСНаЛинииГаражныйНомерРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ПереченьТСНаЛинииГосударственныйНомер" id="23">
+									<DataPath>ПереченьТСНаЛинии.ГосударственныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гос. знак</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>50</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСНаЛинииГосударственныйНомерКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ПереченьТСНаЛинииГосударственныйНомерРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ПереченьТСНаЛинииТС" id="17">
+									<DataPath>ПереченьТСНаЛинии.ТС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортное средство</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСНаЛинииТСКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ПереченьТСНаЛинииТСРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ПереченьТСНаЛинииТекущееПоложениеДата" id="426">
+									<DataPath>ПереченьТСНаЛинии.ТекущееПоложениеДата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДЛФ=T</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДЛФ=T</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ПереченьТСНаЛинииТекущееПоложениеДатаКонтекстноеМеню" id="427"/>
+									<ExtendedTooltip name="ПереченьТСНаЛинииТекущееПоложениеДатаРасширеннаяПодсказка" id="428"/>
+								</InputField>
+								<InputField name="ПереченьТСНаЛинииФлагНетСвязи" id="423">
+									<DataPath>ПереченьТСНаЛинии.ФлагНетСвязи</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСНаЛинииФлагНетСвязиКонтекстноеМеню" id="424"/>
+									<ExtendedTooltip name="ПереченьТСНаЛинииФлагНетСвязиРасширеннаяПодсказка" id="425"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВГараже" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа в гараже</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа в гараже</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FFFFFF</BackColor>
+					<ExtendedTooltip name="ГруппаВГаражеРасширеннаяПодсказка" id="148"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНадписьТСВГараже" id="260">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСВГараже</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСВГараже</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#CCFFCC</BackColor>
+							<ExtendedTooltip name="ГруппаНадписьТСВГаражеРасширеннаяПодсказка" id="261"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьТСВГаражеСтр" id="204">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#339966</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортные средства в гараже</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСВГаражеСтрКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="НадписьТСВГаражеСтрРасширеннаяПодсказка" id="206"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСВГаражеКол" id="262">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьТСВГаражеКолКонтекстноеМеню" id="263"/>
+									<ExtendedTooltip name="НадписьТСВГаражеКолРасширеннаяПодсказка" id="264"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСВГаражеКолСНарушениями" id="464">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>КолНар</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="НадписьТСВГаражеКолСНарушениямиКонтекстноеМеню" id="465"/>
+									<ExtendedTooltip name="НадписьТСВГаражеКолСНарушениямиРасширеннаяПодсказка" id="466"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПереченьТСВГараже" id="149">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПереченьТСВГараже</DataPath>
+							<Font ref="style:TextFont" height="48" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleFont ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереченьТСВГаражеКонтекстноеМеню" id="150"/>
+							<AutoCommandBar name="ПереченьТСВГаражеКоманднаяПанель" id="151">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереченьТСВГаражеРасширеннаяПодсказка" id="152"/>
+							<SearchStringAddition name="ПереченьТСВГаражеСтрокаПоиска" id="153">
+								<AdditionSource>
+									<Item>ПереченьТСВГараже</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВГаражеСтрокаПоискаКонтекстноеМеню" id="154"/>
+								<ExtendedTooltip name="ПереченьТСВГаражеСтрокаПоискаРасширеннаяПодсказка" id="155"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереченьТСВГаражеСостояниеПросмотра" id="156">
+								<AdditionSource>
+									<Item>ПереченьТСВГараже</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВГаражеСостояниеПросмотраКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="ПереченьТСВГаражеСостояниеПросмотраРасширеннаяПодсказка" id="158"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереченьТСВГаражеУправлениеПоиском" id="159">
+								<AdditionSource>
+									<Item>ПереченьТСВГараже</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВГаражеУправлениеПоискомКонтекстноеМеню" id="160"/>
+								<ExtendedTooltip name="ПереченьТСВГаражеУправлениеПоискомРасширеннаяПодсказка" id="161"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ПереченьТСВГаражеПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ПереченьТСВГаражеГаражныйНомер" id="165">
+									<DataPath>ПереченьТСВГараже.ГаражныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гар. номер</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСВГаражеГаражныйНомерКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеГаражныйНомерРасширеннаяПодсказка" id="167"/>
+								</InputField>
+								<InputField name="ПереченьТСВГаражеГосударственныйНомер" id="168">
+									<DataPath>ПереченьТСВГараже.ГосударственныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гос. знак</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>50</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСВГаражеГосударственныйНомерКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеГосударственныйНомерРасширеннаяПодсказка" id="170"/>
+								</InputField>
+								<InputField name="ПереченьТСВГаражеТС" id="162">
+									<DataPath>ПереченьТСВГараже.ТС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортное средство</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВГаражеТСКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеТСРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ПереченьТСВГаражеГараж" id="337">
+									<DataPath>ПереченьТСВГараже.Гараж</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВГаражеГаражКонтекстноеМеню" id="338"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеГаражРасширеннаяПодсказка" id="339"/>
+								</InputField>
+								<InputField name="ПереченьТСВГаражеФлагНетСвязи" id="434">
+									<DataPath>ПереченьТСВГараже.ФлагНетСвязи</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВГаражеФлагНетСвязиКонтекстноеМеню" id="435"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеФлагНетСвязиРасширеннаяПодсказка" id="436"/>
+								</InputField>
+								<InputField name="ПереченьТСВГаражеТекущееПоложениеДата" id="437">
+									<DataPath>ПереченьТСВГараже.ТекущееПоложениеДата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВГаражеТекущееПоложениеДатаКонтекстноеМеню" id="438"/>
+									<ExtendedTooltip name="ПереченьТСВГаражеТекущееПоложениеДатаРасширеннаяПодсказка" id="439"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаМалоеОбщее" id="380">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа малое общее</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа малое общее</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFFFFF</BackColor>
+							<ExtendedTooltip name="ГруппаМалоеОбщееРасширеннаяПодсказка" id="381"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаМалоеОбщее0" id="382">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее линия ремонт</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее0</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>#FFFF99</BackColor>
+									<ExtendedTooltip name="ГруппаМалоеОбщее0РасширеннаяПодсказка" id="383"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаМалоеОбщееЛиния" id="386">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее линия</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее линия</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<Group>Vertical</Group>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>#CCFFFF</BackColor>
+											<ExtendedTooltip name="ГруппаМалоеОбщееЛинияРасширеннаяПодсказка" id="387"/>
+											<ChildItems>
+												<LabelDecoration name="НадписьИтого0Стр1" id="394">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>На линии</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#CCFFFF</BackColor>
+													<ContextMenu name="НадписьИтого0Стр1КонтекстноеМеню" id="395"/>
+													<ExtendedTooltip name="НадписьИтого0Стр1РасширеннаяПодсказка" id="396"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаМалоеОбщееЛинияКол" id="429">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа малое общее линия кол</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа малое общее линия кол</v8:content>
+														</v8:item>
+													</ToolTip>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<Group>Horizontal</Group>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаМалоеОбщееЛинияКолРасширеннаяПодсказка" id="430"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьИтого0Кол1" id="397">
+															<TextColor>#000000</TextColor>
+															<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Кол</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<VerticalAlign>Center</VerticalAlign>
+															<BackColor>#CCFFFF</BackColor>
+															<ContextMenu name="НадписьИтого0Кол1КонтекстноеМеню" id="398"/>
+															<ExtendedTooltip name="НадписьИтого0Кол1РасширеннаяПодсказка" id="399"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьИтого0Кол1СНарушениями" id="431">
+															<TextColor>style:SpecialTextColor</TextColor>
+															<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>КолНар</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<VerticalAlign>Center</VerticalAlign>
+															<BackColor>#CCFFFF</BackColor>
+															<ContextMenu name="НадписьИтого0Кол1СНарушениямиКонтекстноеМеню" id="432"/>
+															<ExtendedTooltip name="НадписьИтого0Кол1СНарушениямиРасширеннаяПодсказка" id="433"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаМалоеОбщееРемонт" id="390">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее ремонт</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее ремонт</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>#C0C0C0</BackColor>
+											<ExtendedTooltip name="ГруппаМалоеОбщееРемонтРасширеннаяПодсказка" id="391"/>
+											<ChildItems>
+												<LabelDecoration name="НадписьИтого2Стр1" id="400">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В ремонте</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#C0C0C0</BackColor>
+													<ContextMenu name="НадписьИтого2Стр1КонтекстноеМеню" id="401"/>
+													<ExtendedTooltip name="НадписьИтого2Стр1РасширеннаяПодсказка" id="402"/>
+												</LabelDecoration>
+												<LabelDecoration name="НадписьИтого2Кол1" id="403">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Кол</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#C0C0C0</BackColor>
+													<ContextMenu name="НадписьИтого2Кол1КонтекстноеМеню" id="404"/>
+													<ExtendedTooltip name="НадписьИтого2Кол1РасширеннаяПодсказка" id="405"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаМалоеОбщее1" id="384">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее в гараже и БСМТС</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>#FFFF99</BackColor>
+									<ExtendedTooltip name="ГруппаМалоеОбщее1РасширеннаяПодсказка" id="385"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаМалоеОбщееГараж" id="388">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее гараж</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее гараж</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>#CCFFCC</BackColor>
+											<ExtendedTooltip name="ГруппаМалоеОбщееГаражРасширеннаяПодсказка" id="389"/>
+											<ChildItems>
+												<LabelDecoration name="НадписьИтого1Стр1" id="406">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В гараже</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#CCFFCC</BackColor>
+													<ContextMenu name="НадписьИтого1Стр1КонтекстноеМеню" id="407"/>
+													<ExtendedTooltip name="НадписьИтого1Стр1РасширеннаяПодсказка" id="408"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаМалоеОбщееГаражКол" id="440">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа малое общее гараж кол</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа малое общее гараж кол</v8:content>
+														</v8:item>
+													</ToolTip>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<Group>Horizontal</Group>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаМалоеОбщееГаражКолРасширеннаяПодсказка" id="441"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьИтого1Кол1" id="409">
+															<TextColor>#000000</TextColor>
+															<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Кол</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<VerticalAlign>Center</VerticalAlign>
+															<BackColor>#CCFFCC</BackColor>
+															<ContextMenu name="НадписьИтого1Кол1КонтекстноеМеню" id="410"/>
+															<ExtendedTooltip name="НадписьИтого1Кол1РасширеннаяПодсказка" id="411"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьИтого1Кол1СНарушениями" id="442">
+															<TextColor>style:SpecialTextColor</TextColor>
+															<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>КолНар</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<VerticalAlign>Center</VerticalAlign>
+															<BackColor>#CCFFCC</BackColor>
+															<ContextMenu name="НадписьИтого1Кол1СНарушениямиКонтекстноеМеню" id="443"/>
+															<ExtendedTooltip name="НадписьИтого1Кол1СНарушениямиРасширеннаяПодсказка" id="444"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаМалоеОбщееБСМТС" id="392">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее БСМТС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа малое общее БСМТС</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>#FFC6C6</BackColor>
+											<ExtendedTooltip name="ГруппаМалоеОбщееБСМТСРасширеннаяПодсказка" id="393"/>
+											<ChildItems>
+												<LabelDecoration name="НадписьИтого3Стр1" id="412">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Без БСМТС</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#FFC6C6</BackColor>
+													<ContextMenu name="НадписьИтого3Стр1КонтекстноеМеню" id="413"/>
+													<ExtendedTooltip name="НадписьИтого3Стр1РасширеннаяПодсказка" id="414"/>
+												</LabelDecoration>
+												<LabelDecoration name="НадписьИтого3Кол1" id="415">
+													<TextColor>#000000</TextColor>
+													<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Кол</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<BackColor>#FFC6C6</BackColor>
+													<ContextMenu name="НадписьИтого3Кол1КонтекстноеМеню" id="416"/>
+													<ExtendedTooltip name="НадписьИтого3Кол1РасширеннаяПодсказка" id="417"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаМалоеОбщееИтого" id="467">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее итого</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа малое общее итого</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalStretch>true</VerticalStretch>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>#FFFF99</BackColor>
+									<ExtendedTooltip name="ГруппаМалоеОбщееИтогоРасширеннаяПодсказка" id="468"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьМалоеОбщееИтого" id="469">
+											<TextColor>#3366FF</TextColor>
+											<Font ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>56</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьМалоеОбщееИтогоКонтекстноеМеню" id="470"/>
+											<ExtendedTooltip name="НадписьМалоеОбщееИтогоРасширеннаяПодсказка" id="471"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="145">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#CCFFFF</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="146"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНетДанныхБСМТС" id="177">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нет данных БСМТС</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нет данных БСМТС</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FFFFFF</BackColor>
+					<ExtendedTooltip name="ГруппаНетДанныхБСМТСРасширеннаяПодсказка" id="178"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНадписьТСБезБСМТС" id="250">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСБез БСМТС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСБез БСМТС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFC6C6</BackColor>
+							<ExtendedTooltip name="ГруппаНадписьТСБезБСМТСРасширеннаяПодсказка" id="251"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьТСБезДанныхСтр" id="201">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#FF0000</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ТС без данных БСМТС</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСБезДанныхСтрКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="НадписьТСБезДанныхСтрРасширеннаяПодсказка" id="203"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСБезДанныхКол" id="252">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСБезДанныхКолКонтекстноеМеню" id="253"/>
+									<ExtendedTooltip name="НадписьТСБезДанныхКолРасширеннаяПодсказка" id="254"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПереченьТСНетДанных" id="179">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПереченьТСНетДанных</DataPath>
+							<Font ref="style:TextFont" height="72" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереченьТСНетДанныхКонтекстноеМеню" id="180"/>
+							<AutoCommandBar name="ПереченьТСНетДанныхКоманднаяПанель" id="181">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереченьТСНетДанныхРасширеннаяПодсказка" id="182"/>
+							<SearchStringAddition name="ПереченьТСНетДанныхСтрокаПоиска" id="183">
+								<AdditionSource>
+									<Item>ПереченьТСНетДанных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНетДанныхСтрокаПоискаКонтекстноеМеню" id="184"/>
+								<ExtendedTooltip name="ПереченьТСНетДанныхСтрокаПоискаРасширеннаяПодсказка" id="185"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереченьТСНетДанныхСостояниеПросмотра" id="186">
+								<AdditionSource>
+									<Item>ПереченьТСНетДанных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНетДанныхСостояниеПросмотраКонтекстноеМеню" id="187"/>
+								<ExtendedTooltip name="ПереченьТСНетДанныхСостояниеПросмотраРасширеннаяПодсказка" id="188"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереченьТСНетДанныхУправлениеПоиском" id="189">
+								<AdditionSource>
+									<Item>ПереченьТСНетДанных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСНетДанныхУправлениеПоискомКонтекстноеМеню" id="190"/>
+								<ExtendedTooltip name="ПереченьТСНетДанныхУправлениеПоискомРасширеннаяПодсказка" id="191"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПереченьТСНетДанныхГаражныйНомер" id="195">
+									<DataPath>ПереченьТСНетДанных.ГаражныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гар. номер</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСНетДанныхГаражныйНомерКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="ПереченьТСНетДанныхГаражныйНомерРасширеннаяПодсказка" id="197"/>
+								</InputField>
+								<InputField name="ПереченьТСНетДанныхГосударственныйНомер" id="198">
+									<DataPath>ПереченьТСНетДанных.ГосударственныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гос. знак</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСНетДанныхГосударственныйНомерКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ПереченьТСНетДанныхГосударственныйНомерРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ПереченьТСНетДанныхТС" id="192">
+									<DataPath>ПереченьТСНетДанных.ТС</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортное средство</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСНетДанныхТСКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ПереченьТСНетДанныхТСРасширеннаяПодсказка" id="194"/>
+								</InputField>
+								<InputField name="ПереченьТСНетДанныхПричина" id="334">
+									<DataPath>ПереченьТСНетДанных.Причина</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСНетДанныхПричинаКонтекстноеМеню" id="335"/>
+									<ExtendedTooltip name="ПереченьТСНетДанныхПричинаРасширеннаяПодсказка" id="336"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНарушенияБДД" id="421">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нарушения БДД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нарушения БДД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FFFFFF</BackColor>
+					<ExtendedTooltip name="ГруппаНарушенияБДДРасширеннаяПодсказка" id="422"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьТСНаЛинииСНарушениями" id="237">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>#000000</TextColor>
+							<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТС на линии с нарушениями БД</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<BackColor>#CCFFCC</BackColor>
+							<ContextMenu name="НадписьТСНаЛинииСНарушениямиКонтекстноеМеню" id="238"/>
+							<ExtendedTooltip name="НадписьТСНаЛинииСНарушениямиРасширеннаяПодсказка" id="239"/>
+						</LabelDecoration>
+						<Table name="ПереченьТССНарушениями" id="340">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПереченьТССНарушениями</DataPath>
+							<Font ref="style:NormalTextFont" height="72" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереченьТССНарушениямиКонтекстноеМеню" id="341"/>
+							<AutoCommandBar name="ПереченьТССНарушениямиКоманднаяПанель" id="342">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереченьТССНарушениямиРасширеннаяПодсказка" id="343"/>
+							<SearchStringAddition name="ПереченьТССНарушениямиСтрокаПоиска" id="344">
+								<AdditionSource>
+									<Item>ПереченьТССНарушениями</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТССНарушениямиСтрокаПоискаКонтекстноеМеню" id="345"/>
+								<ExtendedTooltip name="ПереченьТССНарушениямиСтрокаПоискаРасширеннаяПодсказка" id="346"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереченьТССНарушениямиСостояниеПросмотра" id="347">
+								<AdditionSource>
+									<Item>ПереченьТССНарушениями</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТССНарушениямиСостояниеПросмотраКонтекстноеМеню" id="348"/>
+								<ExtendedTooltip name="ПереченьТССНарушениямиСостояниеПросмотраРасширеннаяПодсказка" id="349"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереченьТССНарушениямиУправлениеПоиском" id="350">
+								<AdditionSource>
+									<Item>ПереченьТССНарушениями</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТССНарушениямиУправлениеПоискомКонтекстноеМеню" id="351"/>
+								<ExtendedTooltip name="ПереченьТССНарушениямиУправлениеПоискомРасширеннаяПодсказка" id="352"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПереченьТССНарушениямиГаражныйНомер" id="356">
+									<DataPath>ПереченьТССНарушениями.ГаражныйНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТССНарушениямиГаражныйНомерКонтекстноеМеню" id="357"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиГаражныйНомерРасширеннаяПодсказка" id="358"/>
+								</InputField>
+								<InputField name="ПереченьТССНарушениямиГосударственныйНомер" id="359">
+									<DataPath>ПереченьТССНарушениями.ГосударственныйНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТССНарушениямиГосударственныйНомерКонтекстноеМеню" id="360"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиГосударственныйНомерРасширеннаяПодсказка" id="361"/>
+								</InputField>
+								<InputField name="ПереченьТССНарушениямиТС" id="353">
+									<DataPath>ПереченьТССНарушениями.ТС</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТССНарушениямиТСКонтекстноеМеню" id="354"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиТСРасширеннаяПодсказка" id="355"/>
+								</InputField>
+								<InputField name="ПереченьТССНарушениямиНаименованиеНарушения" id="362">
+									<DataPath>ПереченьТССНарушениями.НаименованиеНарушения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТССНарушениямиНаименованиеНарушенияКонтекстноеМеню" id="363"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиНаименованиеНарушенияРасширеннаяПодсказка" id="364"/>
+								</InputField>
+								<InputField name="ПереченьТССНарушениямиКоличествоНарушений" id="365">
+									<DataPath>ПереченьТССНарушениями.КоличествоНарушений</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТССНарушениямиКоличествоНарушенийКонтекстноеМеню" id="366"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиКоличествоНарушенийРасширеннаяПодсказка" id="367"/>
+								</InputField>
+								<InputField name="ПереченьТССНарушениямиВодитель" id="368">
+									<DataPath>ПереченьТССНарушениями.Водитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТССНарушениямиВодительКонтекстноеМеню" id="369"/>
+									<ExtendedTooltip name="ПереченьТССНарушениямиВодительРасширеннаяПодсказка" id="370"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="235">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="236"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьТСВРемонтеПолный" id="242">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>#000000</TextColor>
+					<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС находящиеся в ремонте</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<BackColor>#00FF00</BackColor>
+					<ContextMenu name="НадписьТСВРемонтеПолныйКонтекстноеМеню" id="243"/>
+					<ExtendedTooltip name="НадписьТСВРемонтеПолныйРасширеннаяПодсказка" id="244"/>
+				</LabelDecoration>
+				<Table name="ПереченьТСВРемонтеПолный" id="303">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ПереченьТСВРемонтеПолный</DataPath>
+					<Font ref="style:NormalTextFont" height="48" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПереченьТСВРемонтеПолныйКонтекстноеМеню" id="304"/>
+					<AutoCommandBar name="ПереченьТСВРемонтеПолныйКоманднаяПанель" id="305">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПереченьТСВРемонтеПолныйРасширеннаяПодсказка" id="306"/>
+					<SearchStringAddition name="ПереченьТСВРемонтеПолныйСтрокаПоиска" id="307">
+						<AdditionSource>
+							<Item>ПереченьТСВРемонтеПолный</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереченьТСВРемонтеПолныйСтрокаПоискаКонтекстноеМеню" id="308"/>
+						<ExtendedTooltip name="ПереченьТСВРемонтеПолныйСтрокаПоискаРасширеннаяПодсказка" id="309"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПереченьТСВРемонтеПолныйСостояниеПросмотра" id="310">
+						<AdditionSource>
+							<Item>ПереченьТСВРемонтеПолный</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереченьТСВРемонтеПолныйСостояниеПросмотраКонтекстноеМеню" id="311"/>
+						<ExtendedTooltip name="ПереченьТСВРемонтеПолныйСостояниеПросмотраРасширеннаяПодсказка" id="312"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПереченьТСВРемонтеПолныйУправлениеПоиском" id="313">
+						<AdditionSource>
+							<Item>ПереченьТСВРемонтеПолный</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереченьТСВРемонтеПолныйУправлениеПоискомКонтекстноеМеню" id="314"/>
+						<ExtendedTooltip name="ПереченьТСВРемонтеПолныйУправлениеПоискомРасширеннаяПодсказка" id="315"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПереченьТСВРемонтеПолныйДатаНачалаРемонта" id="325">
+							<DataPath>ПереченьТСВРемонтеПолный.ДатаНачалаРемонта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата начала</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<MaxWidth>10</MaxWidth>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйДатаНачалаРемонтаКонтекстноеМеню" id="326"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйДатаНачалаРемонтаРасширеннаяПодсказка" id="327"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйГаражныйНомер" id="319">
+							<DataPath>ПереченьТСВРемонтеПолный.ГаражныйНомер</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гар. номер</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<MaxWidth>10</MaxWidth>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйГаражныйНомерКонтекстноеМеню" id="320"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйГаражныйНомерРасширеннаяПодсказка" id="321"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйГосударственныйНомер" id="322">
+							<DataPath>ПереченьТСВРемонтеПолный.ГосударственныйНомер</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гос. знак</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>40</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>40</MaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйГосударственныйНомерКонтекстноеМеню" id="323"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйГосударственныйНомерРасширеннаяПодсказка" id="324"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйТС" id="316">
+							<DataPath>ПереченьТСВРемонтеПолный.ТС</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>40</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>40</MaxWidth>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйТСКонтекстноеМеню" id="317"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйТСРасширеннаяПодсказка" id="318"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйПодразделение" id="331">
+							<DataPath>ПереченьТСВРемонтеПолный.Подразделение</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйПодразделениеКонтекстноеМеню" id="332"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйПодразделениеРасширеннаяПодсказка" id="333"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйДатаОкончанияПлановая" id="445">
+							<DataPath>ПереченьТСВРемонтеПолный.ДатаОкончанияПлановая</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйДатаОкончанияПлановаяКонтекстноеМеню" id="446"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйДатаОкончанияПлановаяРасширеннаяПодсказка" id="447"/>
+						</InputField>
+						<InputField name="ПереченьТСВРемонтеПолныйГараж" id="328">
+							<DataPath>ПереченьТСВРемонтеПолный.Гараж</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПереченьТСВРемонтеПолныйГаражКонтекстноеМеню" id="329"/>
+							<ExtendedTooltip name="ПереченьТСВРемонтеПолныйГаражРасширеннаяПодсказка" id="330"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="240">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="241"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРемонт" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ремонт</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ремонт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#C0C0C0</BackColor>
+					<ExtendedTooltip name="ГруппаРемонтРасширеннаяПодсказка" id="116"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНадписьТСВРемонте" id="245">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСВРемонте</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа надпись ТСВРемонте</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНадписьТСВРемонтеРасширеннаяПодсказка" id="246"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьТСВРемонтеСтр" id="142">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#0000FF</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортные средства в ремонте</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСВРемонтеСтрКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="НадписьТСВРемонтеСтрРасширеннаяПодсказка" id="144"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьТСВРемонтеКол" id="247">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<ContextMenu name="НадписьТСВРемонтеКолКонтекстноеМеню" id="248"/>
+									<ExtendedTooltip name="НадписьТСВРемонтеКолРасширеннаяПодсказка" id="249"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПереченьТСВРемонте" id="117">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПереченьТСВРемонте</DataPath>
+							<Font ref="style:TextFont" height="72" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПереченьТСВРемонтеКонтекстноеМеню" id="118"/>
+							<AutoCommandBar name="ПереченьТСВРемонтеКоманднаяПанель" id="119">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПереченьТСВРемонтеРасширеннаяПодсказка" id="120"/>
+							<SearchStringAddition name="ПереченьТСВРемонтеСтрокаПоиска" id="121">
+								<AdditionSource>
+									<Item>ПереченьТСВРемонте</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВРемонтеСтрокаПоискаКонтекстноеМеню" id="122"/>
+								<ExtendedTooltip name="ПереченьТСВРемонтеСтрокаПоискаРасширеннаяПодсказка" id="123"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПереченьТСВРемонтеСостояниеПросмотра" id="124">
+								<AdditionSource>
+									<Item>ПереченьТСВРемонте</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВРемонтеСостояниеПросмотраКонтекстноеМеню" id="125"/>
+								<ExtendedTooltip name="ПереченьТСВРемонтеСостояниеПросмотраРасширеннаяПодсказка" id="126"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПереченьТСВРемонтеУправлениеПоиском" id="127">
+								<AdditionSource>
+									<Item>ПереченьТСВРемонте</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПереченьТСВРемонтеУправлениеПоискомКонтекстноеМеню" id="128"/>
+								<ExtendedTooltip name="ПереченьТСВРемонтеУправлениеПоискомРасширеннаяПодсказка" id="129"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПереченьТСВРемонтеДатаНачалаРемонта" id="139">
+									<DataPath>ПереченьТСВРемонте.ДатаНачалаРемонта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСВРемонтеДатаНачалаРемонтаКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеДатаНачалаРемонтаРасширеннаяПодсказка" id="141"/>
+								</InputField>
+								<InputField name="ПереченьТСВРемонтеГаражныйНомер" id="133">
+									<DataPath>ПереченьТСВРемонте.ГаражныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гар. номер</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСВРемонтеГаражныйНомерКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеГаражныйНомерРасширеннаяПодсказка" id="135"/>
+								</InputField>
+								<InputField name="ПереченьТСВРемонтеГосударственныйНомер" id="136">
+									<DataPath>ПереченьТСВРемонте.ГосударственныйНомер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гос.знак</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПереченьТСВРемонтеГосударственныйНомерКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеГосударственныйНомерРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ПереченьТСВРемонтеТС" id="130">
+									<DataPath>ПереченьТСВРемонте.ТС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Транспортное средство</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВРемонтеТСКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеТСРасширеннаяПодсказка" id="132"/>
+								</InputField>
+								<InputField name="ПереченьТСВРемонтеДатаОкончанияПлановая" id="448">
+									<DataPath>ПереченьТСВРемонте.ДатаОкончанияПлановая</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВРемонтеДатаОкончанияПлановаяКонтекстноеМеню" id="449"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеДатаОкончанияПлановаяРасширеннаяПодсказка" id="450"/>
+								</InputField>
+								<InputField name="ПереченьТСВРемонтеГараж" id="210">
+									<DataPath>ПереченьТСВРемонте.Гараж</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПереченьТСВРемонтеГаражКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ПереченьТСВРемонтеГаражРасширеннаяПодсказка" id="212"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="265">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="266"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьИтогоОбщее" id="371">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>#3366FF</TextColor>
+					<Font ref="style:NormalTextFont" faceName="Times New Roman" height="72" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Надпись итого общее</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="НадписьИтогоОбщееКонтекстноеМеню" id="372"/>
+					<ExtendedTooltip name="НадписьИтогоОбщееРасширеннаяПодсказка" id="373"/>
+				</LabelDecoration>
+				<UsualGroup name="Группа4Верх" id="283">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа4 верх</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа4 верх</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4ВерхРасширеннаяПодсказка" id="284"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИтого0" id="267">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого0</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого0</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>75</Width>
+							<Height>20</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#CCFFFF</BackColor>
+							<ExtendedTooltip name="ГруппаИтого0РасширеннаяПодсказка" id="268"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИтого0Стр" id="274">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На линии</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<BackColor>#CCFFFF</BackColor>
+									<ContextMenu name="НадписьИтого0СтрКонтекстноеМеню" id="275"/>
+									<ExtendedTooltip name="НадписьИтого0СтрРасширеннаяПодсказка" id="276"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаИтого0Количество" id="454">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итого0 количество</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итого0 количество</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИтого0КоличествоРасширеннаяПодсказка" id="455"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьИтого0Кол" id="271">
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>#000000</TextColor>
+											<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кол</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>#CCFFFF</BackColor>
+											<ContextMenu name="НадписьИтого0КолКонтекстноеМеню" id="272"/>
+											<ExtendedTooltip name="НадписьИтого0КолРасширеннаяПодсказка" id="273"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьИтого0КолСНарушениями" id="451">
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>style:NegativeTextColor</TextColor>
+											<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>КолНар</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>#CCFFFF</BackColor>
+											<ContextMenu name="НадписьИтого0КолСНарушениямиКонтекстноеМеню" id="452"/>
+											<ExtendedTooltip name="НадписьИтого0КолСНарушениямиРасширеннаяПодсказка" id="453"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИтого1" id="269">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>75</Width>
+							<Height>20</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#CCFFCC</BackColor>
+							<ExtendedTooltip name="ГруппаИтого1РасширеннаяПодсказка" id="270"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИтого1Стр" id="277">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В гараже</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<BackColor>#CCFFCC</BackColor>
+									<ContextMenu name="НадписьИтого1СтрКонтекстноеМеню" id="278"/>
+									<ExtendedTooltip name="НадписьИтого1СтрРасширеннаяПодсказка" id="279"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаИтого1Количество" id="456">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итого1 количество</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итого1 количество</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИтого1КоличествоРасширеннаяПодсказка" id="457"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьИтого1Кол" id="280">
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>#000000</TextColor>
+											<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кол</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>#CCFFCC</BackColor>
+											<ContextMenu name="НадписьИтого1КолКонтекстноеМеню" id="281"/>
+											<ExtendedTooltip name="НадписьИтого1КолРасширеннаяПодсказка" id="282"/>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьИтого1КолСНарушениями" id="458">
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>style:SpecialTextColor</TextColor>
+											<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>КолНар</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<BackColor>#CCFFCC</BackColor>
+											<ContextMenu name="НадписьИтого1КолСНарушениямиКонтекстноеМеню" id="459"/>
+											<ExtendedTooltip name="НадписьИтого1КолСНарушениямиРасширеннаяПодсказка" id="460"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4Низ" id="285">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа4 низ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа4 низ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4НизРасширеннаяПодсказка" id="286"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИтого2" id="295">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого в гараже</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>75</Width>
+							<Height>20</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#C0C0C0</BackColor>
+							<ExtendedTooltip name="ГруппаИтого2РасширеннаяПодсказка" id="296"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИтого2Стр" id="297">
+									<Width>50</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В ремонте</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<BackColor>#C0C0C0</BackColor>
+									<ContextMenu name="НадписьИтого2СтрКонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="НадписьИтого2СтрРасширеннаяПодсказка" id="299"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьИтого2Кол" id="300">
+									<Width>20</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Надпись итого2 кол</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<BackColor>#C0C0C0</BackColor>
+									<ContextMenu name="НадписьИтого2КолКонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="НадписьИтого2КолРасширеннаяПодсказка" id="302"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИтого3" id="287">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого3</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итого на линии</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>75</Width>
+							<Height>20</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFC6C6</BackColor>
+							<ExtendedTooltip name="ГруппаИтого3РасширеннаяПодсказка" id="288"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИтого3Стр" id="289">
+									<Width>50</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Без БСМТС</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<BackColor>#FFC6C6</BackColor>
+									<ContextMenu name="НадписьИтого3СтрКонтекстноеМеню" id="290"/>
+									<ExtendedTooltip name="НадписьИтого3СтрРасширеннаяПодсказка" id="291"/>
+								</LabelDecoration>
+								<LabelDecoration name="НадписьИтого3Кол" id="292">
+									<Width>20</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#000000</TextColor>
+									<Font ref="style:TextFont" faceName="Times New Roman" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Надпись итого3 кол</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<BackColor>#FFC6C6</BackColor>
+									<ContextMenu name="НадписьИтого3КолКонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="НадписьИтого3КолРасширеннаяПодсказка" id="294"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПереченьПодразделений" id="216">
+			<Representation>List</Representation>
+			<Visible>false</Visible>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ПереченьПодразделений</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПереченьПодразделенийКонтекстноеМеню" id="217"/>
+			<AutoCommandBar name="ПереченьПодразделенийКоманднаяПанель" id="218">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПереченьПодразделенийРасширеннаяПодсказка" id="219"/>
+			<SearchStringAddition name="ПереченьПодразделенийСтрокаПоиска" id="220">
+				<AdditionSource>
+					<Item>ПереченьПодразделений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьПодразделенийСтрокаПоискаКонтекстноеМеню" id="221"/>
+				<ExtendedTooltip name="ПереченьПодразделенийСтрокаПоискаРасширеннаяПодсказка" id="222"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПереченьПодразделенийСостояниеПросмотра" id="223">
+				<AdditionSource>
+					<Item>ПереченьПодразделений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьПодразделенийСостояниеПросмотраКонтекстноеМеню" id="224"/>
+				<ExtendedTooltip name="ПереченьПодразделенийСостояниеПросмотраРасширеннаяПодсказка" id="225"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПереченьПодразделенийУправлениеПоиском" id="226">
+				<AdditionSource>
+					<Item>ПереченьПодразделений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьПодразделенийУправлениеПоискомКонтекстноеМеню" id="227"/>
+				<ExtendedTooltip name="ПереченьПодразделенийУправлениеПоискомРасширеннаяПодсказка" id="228"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ПереченьПодразделенийПодразделение" id="229">
+					<DataPath>ПереченьПодразделений.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьПодразделенийПодразделениеКонтекстноеМеню" id="230"/>
+					<ExtendedTooltip name="ПереченьПодразделенийПодразделениеРасширеннаяПодсказка" id="231"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Подразделение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоколонна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереченьТСНаЛинии" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТСНа линии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущееПоложениеДата" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущее положение дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФлагНетСвязи" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг нет связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаВремяБСМТС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата время БСМТС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереченьТСВРемонте" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТСВРемонте</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаНачалаРемонта" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала ремонта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Гараж" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гараж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОкончанияПлановая" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата планового окончания ремонта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПереченьТСВГараже" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТС в гараже</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущееПоложение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущее положение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущееПоложениеДата" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущее положение дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Гараж" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гараж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФлагНетСвязи" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг нет связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФлагНетСвязиМеньшеСуток" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг нет связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПереченьТСНетДанных" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТС без данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Причина" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НомерТекСтрокиНаЛинии" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер тек строки на линии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереченьПодразделений" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень подразделений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НомерТекСтрокиПодразделения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер тек строки подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереключательРазделы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель разделы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереченьТСВРемонтеПолный" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТС  в ремонте подробно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаНачалаРемонта" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала ремонта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Гараж" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гараж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОкончанияПлановая" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата планового окончания ремонта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПереченьТССНарушениями" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТС с нарушениями</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеНарушения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование нарушения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоНарушений" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество нарушений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Водитель" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПереченьТСВЭксплуатации" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень ТСВЭксплуатации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТС" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СистемаМониторинга" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Система мониторинга</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИДвСистемеНавигации" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>И дв системе навигации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГаражныйНомер" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гаражный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГосударственныйНомер" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Государственный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НомерТекСтрокиВРемонте" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер тек строки в ремонте</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СчетчикТактовЛинияГараж" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счетчик тактов линия гараж</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоТактовЛинияГараж" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество тактов линия гараж</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерТекСтрокиГараж" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер тек строки гараж</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереченьГаражей" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень гаражей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЦветГаража" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цвет гаража</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Color</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НаименованиеГеозоны" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование геозоны</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПользовательОС" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСНаЛинииГосударственныйНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСНаЛинииТС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСНаЛинииТекущееПоложениеДата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСНаЛинииГаражныйНомер</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПереченьТСНаЛинии.ФлагНетСвязи</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСВГаражеГаражныйНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСВГаражеГосударственныйНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСВГаражеТС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПереченьТСВГаражеТекущееПоложениеДата</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПереченьТСВГараже.ФлагНетСвязи</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОткрытьФормуАдминистратора" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка системы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка системы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОткрытьФормуАдминистратора</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОбновитьДанныеОсновныхТаблиц" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОбновитьДанныеОсновныхТаблиц</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
